@@ -1,6 +1,6 @@
 ---
-title: RandomDataStreaming
-emoji: 🏃
+title: Real Time Stock Price Streaming
+emoji: 🗠
 colorFrom: blue
 colorTo: gray
 sdk: docker

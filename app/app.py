@@ -23,7 +23,7 @@ class BokehApp:
                    height = 900,
                    x_axis_label="Time",
                    y_axis_label="Value",
-                   title="Streaming Random Data",
+                   title="Real Time Stock Price Streaming",
                    )
         p.title.align = "center"
         p.title.text_font_size="20px"
