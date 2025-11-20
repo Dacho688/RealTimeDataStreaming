@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    container_name: app
+    restart: unless-stopped
+    ports:
+      - "5006:5006" 
