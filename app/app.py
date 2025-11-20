@@ -15,7 +15,7 @@ class BokehApp:
         
         # Create a sample plot
         x = datetime.now()
-        y = random.uniform(0, 100)
+        y = random.uniform(30, 500)
         self.source = ColumnDataSource(data=dict(x=[x], y=[y]))
         self.label_source = self.source.clone()
         p = figure(x_axis_type='datetime', 
