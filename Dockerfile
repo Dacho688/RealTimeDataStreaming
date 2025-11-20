@@ -4,4 +4,4 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY ./app .
-CMD ["bokeh", "serve", "--port", "5006", "--allow-websocket-origin=*", "app.py"]
+CMD ["bokeh", "serve", "--port", "7860", "--allow-websocket-origin=*", "app.py"]
