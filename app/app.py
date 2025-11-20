@@ -70,7 +70,7 @@ class BokehApp:
             self.doc.add_next_tick_callback(partial(self.update_plot, new_data))
             time.sleep(1)
         
-        print("Background thread is shutting down gracefully.")
+        print("Background thread is shutting down gracefully.", flush=True)
 
     def update_plot(self, new_data):
         """
@@ -84,7 +84,7 @@ class BokehApp:
         """
         Callback function that runs when a user closes the document.
         """
-        print(f"Session {session_context.id} destroyed. Stopping background thread.\n", flush=True)
+        print(f"Session {session_context.id} destroyed. Stopping background thread.", flush=True)
         self.stop_event.set()
 
 # Create an instance of the class when the script is run by the Bokeh server
